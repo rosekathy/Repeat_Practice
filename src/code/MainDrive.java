@@ -91,15 +91,38 @@ public class MainDrive {
 		
 //		반복문의 반복 횟수 ? 조건식이 담당 => 조건식의 조건을 변수로 활용하자!
 		
-		for(int i = 0 ; i < 5 ; i++) {
-			for(int j = 0; j < i+1 ; j++) {
+//		for(int i = 0 ; i < 5 ; i++) {
+//			for(int j = 0; j < i+1 ; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println("");
+//		}
+//		
+		
+
+//		3.3) 역방향 별찍기
+		
+//		***** i=0, * 5개 별찍는개수 = 5 -i 개
+//		****  i 1, * 4
+//		***   i 2, * 3
+//		**    i 3, * 2
+//		*     i 4, * 1
+		
+//		첫번째 방법 : i와 j의 연관 관계 추측
+//		for(int i = 0; i < 5 ; i++) {
+//			for(int j = 0 ;j < 5-i ; j++) {
+//				System.out.print("*");
+//			}
+//			System.out.println();
+//		}
+
+//		두번째 방법 : i의 값이 줄어들도록 for문을 감소형으로
+		for(int i = 5; i > 0 ; i--) {
+			for(int j = 0; j<i; j++) {
 				System.out.print("*");
 			}
-			System.out.println("");
+		System.out.println();
 		}
-		
-		
-		
-	}
 
+	}
 }
