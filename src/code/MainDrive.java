@@ -68,16 +68,37 @@ public class MainDrive {
 //		*****
 		
 //		세로 줄바꿈
-		for(int i = 0; i <5 ; i++) {
-			
-//			가로 별찍기
-			for(int j = 0 ; j <5 ; j++) {
+//		for(int i = 0; i <5 ; i++) {
+//			
+////			가로 별찍기
+//			for(int j = 0 ; j <5 ; j++) {
+//				System.out.print("*");
+//			}
+//			
+//			System.out.println();
+//		
+//		}
+
+//		3.2) 기초 삼각형 별직기
+//		*
+//		**
+//		***
+//		****
+//		*****
+		
+//		가로 출력 담당 변수 : j 안쪽 for
+//		세로 줄바꿈 담당 변수 : i 바깥 for
+		
+//		반복문의 반복 횟수 ? 조건식이 담당 => 조건식의 조건을 변수로 활용하자!
+		
+		for(int i = 0 ; i < 5 ; i++) {
+			for(int j = 0; j < i+1 ; j++) {
 				System.out.print("*");
 			}
-			
-			System.out.println();
-		
+			System.out.println("");
 		}
+		
+		
 		
 	}
 
